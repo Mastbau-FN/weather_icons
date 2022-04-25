@@ -102,7 +102,7 @@ async function getIconData() {
 async function scrapeIconData() {
   const result = await scrape(targetUrl)
   const filtered = result
-    .filter(item => !/(from|towards)-/.test(item.title))
+    // .filter(item => !/(from|towards)-/.test(item.title))
     .reduce(
       (prev, curr) => {
         const isDupe = prev.icons.find(x => x.title === curr.title)
