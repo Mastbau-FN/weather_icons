@@ -146,4 +146,90 @@ class WindIcon extends BoxedIcon {
 
   /// [WindIcon] for pointing from  **North by North-West**.
   static const from_nnw = WindIcon(degree: 22.5);
+
+  static WindIcon fromString(
+    String name, {
+    WindIcon? fallback,
+  }) {
+    final target = name.replaceAll('_', '-');
+    final icon = _all[target];
+
+    if (icon != null) {
+      return icon;
+    } else if (fallback != null) {
+      return fallback;
+    } else {
+      throw UnsupportedError('Unsupported icon $name, with no fallback');
+    }
+  }
+
+  static const Map<String, WindIcon> _all = {
+    // Towards
+
+    "towards_n": towards_n,
+
+    "towards_nne": towards_nne,
+
+    "towards_ne": towards_ne,
+
+    "towards_ene": towards_ene,
+
+    "towards_e": towards_e,
+
+    "towards_ese": towards_ese,
+
+    "towards_se": towards_se,
+
+    "towards_sse": towards_sse,
+
+    "towards_s": towards_s,
+
+    "towards_ssw": towards_ssw,
+
+    "towards_sw": towards_sw,
+
+    "towards_wsw": towards_wsw,
+
+    "towards_w": towards_w,
+
+    "towards_wnw": towards_wnw,
+
+    // "towards_n" : towards_n,
+
+    "towards_nnw": towards_nnw,
+
+    // From
+
+    // from_n = WindIcon(degree: 360);
+
+    // from_nne = WindIcon(degree: 337.5);
+
+    // from_ne = WindIcon(degree: 315);
+
+    // from_ene = WindIcon(degree: 292.5);
+
+    // from_e = WindIcon(degree: 270);
+
+    // from_ese = WindIcon(degree: 247.5);
+
+    // from_se = WindIcon(degree: 225);
+
+    // from_sse = WindIcon(degree: 202.5);
+
+    // from_s = WindIcon(degree: 180);
+
+    // from_ssw = WindIcon(degree: 157.5);
+
+    // from_sw = WindIcon(degree: 135);
+
+    // from_wsw = WindIcon(degree: 112.5);
+
+    // from_w = WindIcon(degree: 90);
+
+    // from_wnw = WindIcon(degree: 67.5);
+
+    // from_nw = WindIcon(degree: 45);
+
+    // from_nnw = WindIcon(degree: 22.5);
+  };
 }
