@@ -166,37 +166,37 @@ class WindIcon extends BoxedIcon {
   static const Map<String, WindIcon> _all = {
     // Towards
 
-    "towards_n": towards_n,
+    "towards-n": towards_n,
 
-    "towards_nne": towards_nne,
+    "towards-nne": towards_nne,
 
-    "towards_ne": towards_ne,
+    "towards-ne": towards_ne,
 
-    "towards_ene": towards_ene,
+    "towards-ene": towards_ene,
 
-    "towards_e": towards_e,
+    "towards-e": towards_e,
 
-    "towards_ese": towards_ese,
+    "towards-ese": towards_ese,
 
-    "towards_se": towards_se,
+    "towards-se": towards_se,
 
-    "towards_sse": towards_sse,
+    "towards-sse": towards_sse,
 
-    "towards_s": towards_s,
+    "towards-s": towards_s,
 
-    "towards_ssw": towards_ssw,
+    "towards-ssw": towards_ssw,
 
-    "towards_sw": towards_sw,
+    "towards-sw": towards_sw,
 
-    "towards_wsw": towards_wsw,
+    "towards-wsw": towards_wsw,
 
-    "towards_w": towards_w,
+    "towards-w": towards_w,
 
-    "towards_wnw": towards_wnw,
+    "towards-wnw": towards_wnw,
 
-    // "towards_n" : towards_n,
+    // "towards-n" : towards_n,
 
-    "towards_nnw": towards_nnw,
+    "towards-nnw": towards_nnw,
 
     // From
 
