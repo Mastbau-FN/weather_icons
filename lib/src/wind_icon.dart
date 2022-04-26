@@ -194,7 +194,7 @@ class WindIcon extends BoxedIcon {
 
     "towards-wnw": towards_wnw,
 
-    // "towards-n" : towards_n,
+    "towards-nw": towards_nw,
 
     "towards-nnw": towards_nnw,
 
